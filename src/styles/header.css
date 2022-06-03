@@ -1,0 +1,49 @@
+.header {
+    height: 80px;
+    width: 98vw;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+}
+
+.icons {
+    font-family: 'Rajdhani', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    margin-right: 80px;
+    transition: .3s;
+}
+
+.icons:hover {
+    color: rgb(154, 217, 242);
+}
+
+.left {
+    font-family: 'Rajdhani', sans-serif;
+    float: left;
+    margin-right: auto;
+    margin-left: 50px;
+    color: rgb(154, 217, 242);
+    font-size: 28px;
+}
+
+@media screen and (max-width: 775px) {
+    .left {
+        margin-left: 30px;
+    }
+    .icons {
+        display: none;
+    }
+    .header {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .header {
+        display: none;
+    }
+}

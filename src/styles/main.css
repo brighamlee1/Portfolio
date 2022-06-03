@@ -1,0 +1,153 @@
+.main-container {
+    background-image: url('https://user-images.githubusercontent.com/91819733/171504837-ae75973d-47d0-4736-9f30-6c5612f9c6b7.jpg');
+    height: 900px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    align-items: center;
+}
+
+.main-image {
+    width: 360px;
+    height: 400px;
+    object-fit: cover;
+    border: 5px solid rgb(154, 217, 242);
+    border-radius: 20%;
+}
+
+.left-main-box {
+    margin-left: 100px;
+    text-align: start;
+    color: whitesmoke;
+}
+
+.name {
+    margin: 35px 0 50px 0;
+    font-size: 45px;
+    color: rgb(250, 255, 109);
+    font-weight: 700;
+    font-family: 'Concert One', cursive;
+}
+
+.title {
+    color: whitesmoke;
+    font-size: 35px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.about-me {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 930px) {
+    .main-image {
+        width: 275px;
+        height: 320px;
+    }
+
+    .about-me {
+        font-size: 22px;
+    }
+
+    .title {
+        font-size: 29px;
+    }
+
+    .name {
+        font-size: 35px;
+    }
+
+    .left-main-box {
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 726px) {
+    .main-container {
+        background-image: url('https://user-images.githubusercontent.com/91819733/171504837-ae75973d-47d0-4736-9f30-6c5612f9c6b7.jpg');
+        height: 900px;
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+    .name {
+        margin: 35px 0 50px 0;
+        font-size: 35px;
+        color: rgb(250, 255, 109);
+        font-weight: 700;
+        font-family: 'Concert One', cursive;
+    }
+    .left-main-box {
+        margin: 0;
+        margin-top: 20px;
+        text-align: center;
+        color: whitesmoke;
+        width: 80vw;
+    }
+    .title {
+        color: whitesmoke;
+        font-size: 27px;
+        font-weight: 700;
+        margin: 0;
+        margin-top: 20px;
+    }
+    .about-me {
+        text-align: start;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .main-image {
+        width: 340px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .main-container {
+        background-image: url('https://user-images.githubusercontent.com/91819733/171504837-ae75973d-47d0-4736-9f30-6c5612f9c6b7.jpg');
+        height: 900px;
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .main-container {
+        justify-content: center;
+    }
+
+    .name {
+        margin: 35px 0 50px 0;
+        font-size: 32px;
+        color: rgb(250, 255, 109);
+        font-weight: 700;
+        font-family: 'Concert One', cursive;
+    }
+    .left-main-box {
+        margin: 0;
+        margin-top: 20px;
+        text-align: start;
+        color: whitesmoke;
+        width: 80vw;
+    }
+    .title {
+        color: whitesmoke;
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0;
+        margin-top: 20px;
+    }
+    .about-me {
+        text-align: start;
+        font-size: 18px;
+        font-weight: 700;
+        margin: auto;
+    }
+    .main-image {
+        width: 320px;
+        height: 380px;
+    }
+}

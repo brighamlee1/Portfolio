@@ -1,5 +1,118 @@
+.project-section {
+    margin: auto;
+    margin-top: 200px;
+    width: 70vw;
+}
+
 .project-image {
-    width: 300px;
-    height: 250px;
+    width: 350px;
+    height: 300px;
     border-radius: 15px;
+}
+
+.projects-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 20px;
+    margin: 10px 0 10px 0;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+}
+
+.project {
+    background-color: whitesmoke;
+    padding: 20px;
+    border: 2px solid rgb(154, 217, 242);
+    border-radius: 40px;
+    margin-bottom: 40px;
+}
+
+.project-title {
+    margin-bottom: 55px;
+    font-family: 'Concert One', cursive;
+    font-size: 42px;
+    font-weight: 400;
+}
+
+.project-name {
+    font-size: 22px;
+    font-family: 'Concert One', cursive;
+    color:rgb(31, 31, 31);
+    font-weight: 400;
+}
+
+.languages-used {
+    font-size: 18px;
+    color: rgb(89, 89, 89);
+}
+
+.github-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgb(154, 217, 242);
+    border-radius: 8px;
+    padding: 5px 20px;
+    margin: 10px 10px 5px 0;
+    font-size: 19px;
+    color: black;
+    transition: .35s;
+}
+
+.github-button:hover {
+    background-color: rgb(250, 255, 109);
+}
+
+.live-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: white;
+    border: 1px solid rgb(154, 217, 242);
+    border-radius: 10px;
+    padding: 5px 20px;
+    margin: 10px 10px 5px 0;
+    font-size: 19px;
+    color: black;
+    transition: .35s;
+}
+
+.live-button:hover {
+    background-color: rgb(250, 255, 109);
+    border: 1px solid rgb(250, 255, 109);
+}
+
+@media screen and (max-width: 1171px) {
+    .project-section {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .project-image {
+        width: 310px;
+        height: 250px;
+    }
+    .projects-box {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+}
+
+@media screen and (max-width: 727px) {
+    .project-section {
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .projects-box {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 0;
+        margin: 0
+    }
+    .project-image {
+        width: 280px;
+        height: 230px;
+    }
 }

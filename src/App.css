@@ -1,3 +1,12 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .App {
   text-align: center;
+  font-family: 'Padauk', sans-serif;
+  background-image: url('https://user-images.githubusercontent.com/91819733/171737679-16ea60bc-0ae0-4ee4-9e2f-3e51bf119013.jpg');
+}
+h1, h2, h3, h4, p {
+  margin: 0;
 }

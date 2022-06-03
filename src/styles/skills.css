@@ -1,0 +1,70 @@
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skills-box {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    font-size: 24px;
+    text-align: start;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: whitesmoke;
+    box-shadow: 10px 10px 60px 10px rgba(0,0,0,0.2);
+}
+
+.fa-angles-up {
+    font-size: 20px;
+    margin-right: 10px;
+    color: rgb(154, 217, 242);
+}
+
+.skills-title {
+    font-family: 'Concert One', cursive;
+    font-weight: 400;
+    color: rgb(24, 24, 24);
+    margin: 200px 0 30px 0;
+    font-size: 42px;
+}
+
+@media screen and (max-width: 930px) {
+    .skills-box {
+        display: grid;
+        grid-template-columns: 300px 300px;
+        font-size: 24px;
+        text-align: start;
+        padding: 20px;
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 727px) {
+    .skills-box {
+        display: grid;
+        grid-template-columns: 200px 200px;
+        font-size: 22px;
+        text-align: start;
+        padding: 20px;
+        margin: 20px 0;
+    }
+
+    .skills-title {
+        font-family: 'Concert One', cursive;
+        font-weight: 400;
+        color: rgb(24, 24, 24);
+        margin: 60px 0 30px 0;
+        font-size: 42px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .skills-box {
+        display: grid;
+        grid-template-columns: 150px 150px;
+        font-size: 20px;
+        text-align: start;
+        padding: 20px;
+        margin: 20px 0;
+    }
+}

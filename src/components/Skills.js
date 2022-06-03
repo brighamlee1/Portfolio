@@ -1,8 +1,31 @@
+import '../styles/skills.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 function Skills() {
-    return (
-        <div>
-            <h1>Skills</h1>
+    const skills = ["HTML", "CSS", "JavaScript", "React", "Python", "Django", "Node JS", "MongoDB", "PostgreSQL", "Express", "EJS", "Git"];
+
+    AOS.init();
+    return (<>
+        <div
+            id="skills"
+            data-aos="fade-in"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+            data-aos-once="true"
+        >
+            <h1 className="skills-title">Skills</h1>
+            <div className="skills-container">
+                <div className="skills-box">
+                    {skills.map((skill) => {
+                        return (
+                            <p key={skill}><i className="fa-solid fa-angles-up"></i> {skill}</p>
+                        )
+                    })}
+                </div>
+            </div>
         </div>
+    </>
     );
 }
 
