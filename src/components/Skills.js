@@ -3,7 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 function Skills() {
-    const skills = ["HTML", "CSS", "JavaScript", "React", "Python", "Django", "Node JS", "MongoDB", "PostgreSQL", "Express", "EJS", "Git"];
+    const skills = ["HTML", "CSS", "JavaScript", "Typescript", "TailwindCSS", "React", "Next.js", "Vue", "Nuxt.js", "Node.js", "Nest.js", "PostgreSQL", "Git", "Prisma"];
 
     AOS.init();
     return (<>
